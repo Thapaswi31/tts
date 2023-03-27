@@ -1,0 +1,10 @@
+import pyttsx3
+if __name__ == '__main__':
+        speech = pyttsx3.init()
+        print("Welcome to TTS created by Thapaswi !!")
+        while True:
+                text = input("Enter text and I will speak out that: ")
+                if text == "close":
+                        break;
+                speech.say(text)
+                speech.runAndWait()
